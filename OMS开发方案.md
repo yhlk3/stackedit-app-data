@@ -18,7 +18,7 @@
         "flavinInlaidDetailList": [
             {
                 "otherCraftCost":"其他工艺费"
-                "weight":"单重"
+                "pieceWeight":"单重"
                 "isStandardProduct":"是否标品"
                 "enamelCost":"珐琅费"
                 "ropeMatchingCost":"配绳费"
@@ -45,7 +45,7 @@
 ```json
          {
                 "otherCraftCost":"其他工艺费"
-                "weight":"单重"
+                "pieceWeight":"单重"
                 "isStandardProduct":"是否标品"
                 "enamelCost":"珐琅费"
                 "ropeMatchingCost":"配绳费"
@@ -64,7 +64,7 @@
 ```json
          {
                 "otherCraftFee":"其他工艺费"
-                "weight":"单重"
+                "pieceWeight":"单重"
                 "isStandardProduct":"是否标品"
                 "faLangFee":"珐琅费"
                 "peiShengFee":"配绳费"
