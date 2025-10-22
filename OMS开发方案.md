@@ -53,7 +53,7 @@
             }
 ```
 
-### 三。分称单
+### 三.分称单
 
 **1.分称单明细接口也多返回增原型上那几个字段**
 
@@ -74,32 +74,31 @@
 
 这里我看原型上好像还有个字段的位置调整。
 
-**2.新增扫描条码接口，扫描二维码后跳出查询页面**
-
-**新增了扫码接口**：/oms/oms/tOmsSubscale/scanByTagUniqueCode?tagUniqueCode=xxxxxxx
-
-参数：tagUniqueCode为标签唯一码
-
-返回：
-
+### 四.分称总表
+**1.分称单总表列表接口增加返回新字段**
+接口：/oms/oms/tOmsSubscaleReport/getSubscaleSummaryTable
+现在多返回了：
 ```json
-{
-    "success": true,
-    "message": "操作成功！",
-    "code": 200,
-    "result": {
-        "imageUrl": "",//图片
-        "rawMaterialSource": "上海黄金交易所",//原料来源
-        "rawMaterialPurity": "AU99.99",//原料成色
-        "outboundDate": "2025-09-19",//出库日期
-        "manufacturer": "厚德金贵金属科技有限公司 金条一厂",//制造工厂
-        "productName": "足金制品",//产品名称
-        "qualitySpec": "12g",//质量/规格
-        "preciousMetalInspection": "金含量999%",//贵金属检测
-        "executionStandard": "DVFJHD 001"//执行标准
-    },
-    "timestamp": 1761032470714,
-    "status": 0
-}
+         {
+                "otherCraftFee":"其他工艺费"
+                "pieceWeight":"单重"
+                "isStandardProduct":"是否标品"
+                "faLangFee":"珐琅费"
+                "peiShengFee":"配绳费"
+                "certificateCost":"证书费"
+            }
 ```
-
+### 五.RFID总表
+**1.列表接口增加返回新字段**
+接口：/oms/oms/tOmsSubscaleDetail/commodityRFIDQueryAll
+现在多返回了：
+```json
+         {
+                "otherCraftFee":"其他工艺费"
+                "pieceWeight":"单重"
+                "isStandardProduct":"是否标品"
+                "faLangFee":"珐琅费"
+                "peiShengFee":"配绳费"
+                "certificateCost":"证书费"
+            }
+```
