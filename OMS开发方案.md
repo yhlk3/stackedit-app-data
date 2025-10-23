@@ -17,13 +17,12 @@
         "id": 12556,
         "flavinInlaidDetailList": [
             {
-                "otherCraftCost":"其他工艺费"
+                "otherCraftFee":"其他工艺费"
                 "pieceWeight":"单重"
                 "isStandardProduct":"是否标品"
-                "enamelCost":"珐琅费"
-                "ropeMatchingCost":"配绳费"
+                "faLangFee":"珐琅费"
+                "peiShengFee":"配绳费"
                 "certificateCost":"证书费"
-               
             }]
     "timestamp": 1760955267396,
     "status": 0
@@ -43,12 +42,12 @@
 返回值中新字段的名称：
 
 ```json
-         {
-                "otherCraftCost":"其他工艺费"
+           {
+                "otherCraftFee":"其他工艺费"
                 "pieceWeight":"单重"
                 "isStandardProduct":"是否标品"
-                "enamelCost":"珐琅费"
-                "ropeMatchingCost":"配绳费"
+                "faLangFee":"珐琅费"
+                "peiShengFee":"配绳费"
                 "certificateCost":"证书费"
             }
 ```
